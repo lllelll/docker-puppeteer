@@ -9,6 +9,7 @@ RUN  apt-get update \
      # Install latest chrome dev package, which installs the necessary libs to
      # make the bundled version of Chromium that Puppeteer installs work.
      && apt-get install -y wget --no-install-recommends \
+     && apt-get install -y git \
      && apt-get install -y tar --no-install-recommends \
      && apt-get install -y bzip2 --no-install-recommends \
      && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
